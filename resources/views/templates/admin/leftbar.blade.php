@@ -10,14 +10,26 @@
                           <span>Dashboard</span>
                         </a>
                     </li>
-                    
+                    <li class="sub">
+                        <a href="{{ route('admin.doctor.index')}}">
+                          <i class="fa fa-user-md"></i>
+                          <span>Doctor</span>
+                        </a>                        
+                    </li>
                     <li class="sub">
                         <a href="{{ route('admin.faculty.index')}}">
-                          <i class="fa fa-cogs"></i>
+                          <i class="fa fa-sitemap"></i>
                           <span>Faculty</span>
                         </a>
                         
                     </li>
+                    <li class="sub">
+                        <a href="">
+                          <i class="fa fa-btc"></i>
+                          <span>Status</span>
+                        </a>                        
+                    </li>
+
                     
                 </ul>
             </div>

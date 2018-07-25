@@ -30,4 +30,11 @@ Route::namespace('Admin')->prefix('admin')->group(function(){
 			'as'	=>	'admin.faculty.add'
 		]);
 	});
+	Route::prefix('doctor')->group(function(){
+		Route::get('/',[
+			'uses'	=> 'DoctorController@index',
+			'as'	=>	'admin.doctor.index'
+		]);
+		
+	});
 });
