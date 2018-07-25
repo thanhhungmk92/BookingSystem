@@ -23,8 +23,6 @@ class CreateBookingTable extends Migration
             $table->foreign('status_id')->references('id')->on('status');
             $table->foreign('customer_id')->references('id')->on('customers');
             $table->foreign('doctor_id')->references('id')->on('doctors');
-
-
             $table->timestamps();
         });
     }

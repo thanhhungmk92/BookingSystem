@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::namespace('Admin')->prefix('admin')->group(function(){	
+	Route::get('/',[
+		'uses'	=> 'IndexController@index',
+		'as'	=>	'admin.index.index'
+	]);	
 });
