@@ -16,4 +16,18 @@ Route::namespace('Admin')->prefix('admin')->group(function(){
 		'uses'	=> 'IndexController@index',
 		'as'	=>	'admin.index.index'
 	]);	
+	Route::prefix('faculty')->group(function(){
+		Route::get('/',[
+			'uses'	=> 'FacultyController@index',
+			'as'	=>	'admin.faculty.index'
+		]);
+		Route::get('/add',[
+			'uses'	=> 'FacultyController@getAdd',
+			'as'	=>	'admin.faculty.add'
+		]);
+		Route::post('/add',[
+			'uses'	=> 'FacultyController@postAdd',
+			'as'	=>	'admin.faculty.add'
+		]);
+	});
 });
